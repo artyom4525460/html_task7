@@ -2,12 +2,17 @@
     width: 100%;
     position: relative;
     padding: 45px 45px 22px 45px;
+    background: #fff;
+    filter: drop-shadow(0 0 11.5px rgba(0,0,0,0.16));
 }
 
 .video-screen{
     height: 547px;
     width: 100%;
     background: #fff;
+    @media screen and (max-width: $max-mobile-width){
+        height: 55.81vw;
+    }
 }
 
 .button-block{
@@ -18,6 +23,9 @@
 
 .query-message{
     max-width: 967px;
+    @media screen and (max-width: $max-mobile-width){
+        width: 90%;
+    }
     filter: drop-shadow(0px 3px 3.5px rgba(0,0,0,0.16));
     background-color: #ffffff;
     border: 1px solid #707070;
@@ -32,5 +40,32 @@
         color: #707070;
         font-family: "Segoe UI";
         padding: 15px 0;
+        @media screen and (max-width: $max-mobile-width){
+            font-size: 30px;
+        }
+    }
+}
+
+.wait{
+    padding: 50px 64px;
+    text-align: center;
+    @media screen and (max-width: $max-mobile-width){
+        padding: 20px 15px;
+    }
+    .animation-screen{
+        max-width: 687px;
+        height: 350px;
+        background-color: #ffffff;
+        border: 1px solid #707070;
+        margin: 0 auto;
+        .animation-text{
+            max-width: 300px;
+        }
+    }
+    .wait-info{
+        padding: 62px 0;
+    }
+    .progress-text{
+        padding: 18px 0;
     }
 }

@@ -9,7 +9,21 @@ body {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   font-size: 40px;
-  color: #707070; }
+  color: #707070;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px; }
+  @media screen and (max-width: 1920px) {
+    body {
+      padding-bottom: 5vw;
+      padding-left: 2.6vw;
+      padding-right: 2.6vw; } }
+  @media screen and (max-width: 980px) {
+    body {
+      padding-bottom: 5vw;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 30px; } }
 
 html,
 body {
@@ -22,8 +36,10 @@ body {
 section {
   padding: 0 50px;
   max-width: 1211px;
-  margin: 0 auto;
-  background-color: #ffffff; }
+  margin: 0 auto; }
+  @media screen and (max-width: 980px) {
+    section {
+      padding: 0 15px; } }
 
 h1 {
   font-size: 35px;
@@ -31,6 +47,9 @@ h1 {
   font-weight: bold;
   margin: 64px 0 54px;
   text-align: center; }
+  @media screen and (max-width: 980px) {
+    h1 {
+      font-size: 30px; } }
 
 img {
   max-width: 100%; }
@@ -64,6 +83,12 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff; }
+  @media screen and (max-width: 980px) {
+    .play-btn {
+      width: 100px;
+      height: 100px; }
+      .play-btn img {
+        width: 35px; } }
 
 .scale {
   border-radius: 7px;
@@ -78,12 +103,18 @@ img {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     position: relative; }
+    @media screen and (max-width: 980px) {
+      .scale .controls {
+        height: 5px; } }
     .scale .controls .play {
       width: 43px;
       position: absolute;
       top: 50%;
       left: 0;
       transform: translate(0, -50%); }
+      @media screen and (max-width: 980px) {
+        .scale .controls .play {
+          width: 30px; } }
     .scale .controls .scale-btn {
       width: 48px;
       height: 47px;
@@ -95,11 +126,17 @@ img {
       top: 50%;
       left: 50%;
       transform: translate(0, -50%); }
+      @media screen and (max-width: 980px) {
+        .scale .controls .scale-btn {
+          width: 30px;
+          height: 30px;
+          border: 4px solid #000000; } }
 
 .button {
   cursor: pointer;
   font-size: 40px;
   width: 331px;
+  max-width: 100%;
   height: 84px;
   border-radius: 15px;
   background-color: #000000;
@@ -107,9 +144,14 @@ img {
   font-weight: bold;
   font-family: "Gilroy";
   border: 0; }
+  @media screen and (max-width: 980px) {
+    .button {
+      height: 50px;
+      font-size: 30px; } }
 
 .small-button {
   width: 219px;
+  max-width: 100%;
   height: 64px;
   background-color: #262020;
   border: 1px solid #707070;
@@ -118,16 +160,78 @@ img {
   font-family: "Stencil";
   border-radius: 0;
   margin: 0 auto; }
+  @media screen and (max-width: 980px) {
+    .small-button {
+      height: 50px;
+      width: 120px;
+      font-size: 28px; } }
+
+.progress-area {
+  width: 100%;
+  height: 68px;
+  border-radius: 34px;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.16));
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  padding: 4px; }
+  @media screen and (max-width: 980px) {
+    .progress-area {
+      height: 48px; } }
+  .progress-area .progress {
+    width: 55%;
+    height: 58px;
+    border-radius: 29px;
+    background-color: #000000;
+    border: 1px solid #707070; }
+    @media screen and (max-width: 980px) {
+      .progress-area .progress {
+        height: 38px; } }
+
+.form-input {
+  height: 56px;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.16));
+  background-color: #ffffff;
+  border: 1px solid #707070; }
+  @media screen and (max-width: 980px) {
+    .form-input {
+      height: 38px; } }
+
+.message-input {
+  max-width: 100%;
+  height: 75px;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.16));
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  font-size: 30px;
+  font-family: "Segoe UI"; }
+  @media screen and (max-width: 980px) {
+    .message-input {
+      height: 50px;
+      font-size: 20px; } }
+
+::placeholder {
+  font-size: 30px;
+  color: #707070;
+  font-family: "Segoe UI"; }
+  @media screen and (max-width: 980px) {
+    ::placeholder {
+      font-size: 20px; } }
 
 .broadcast {
   width: 100%;
   position: relative;
-  padding: 45px 45px 22px 45px; }
+  padding: 45px 45px 22px 45px;
+  background: #fff;
+  filter: drop-shadow(0 0 11.5px rgba(0, 0, 0, 0.16)); }
 
 .video-screen {
   height: 547px;
   width: 100%;
   background: #fff; }
+  @media screen and (max-width: 980px) {
+    .video-screen {
+      height: 55.81vw; } }
 
 .button-block {
   margin-top: 40px;
@@ -145,8 +249,160 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media screen and (max-width: 980px) {
+    .query-message {
+      width: 90%; } }
   .query-message .text {
     font-size: 40px;
     color: #707070;
     font-family: "Segoe UI";
     padding: 15px 0; }
+    @media screen and (max-width: 980px) {
+      .query-message .text {
+        font-size: 30px; } }
+
+.wait {
+  padding: 50px 64px;
+  text-align: center; }
+  @media screen and (max-width: 980px) {
+    .wait {
+      padding: 20px 15px; } }
+  .wait .animation-screen {
+    max-width: 687px;
+    height: 350px;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    margin: 0 auto; }
+    .wait .animation-screen .animation-text {
+      max-width: 300px; }
+  .wait .wait-info {
+    padding: 62px 0; }
+  .wait .progress-text {
+    padding: 18px 0; }
+
+.chat-section {
+  max-width: 1819px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding-left: 247px; }
+  @media screen and (max-width: 1920px) {
+    .chat-section {
+      padding-left: 12.86vw; } }
+  @media screen and (max-width: 1440px) {
+    .chat-section {
+      padding-left: 25px; } }
+  @media screen and (max-width: 980px) {
+    .chat-section {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.chat {
+  max-width: 1111px;
+  padding: 0; }
+  @media screen and (max-width: 1440px) {
+    .chat {
+      margin: 0 auto; } }
+  .chat .chat-form {
+    padding: 13px 0 17px;
+    width: 100%; }
+    .chat .chat-form form {
+      width: 100%;
+      display: flex; }
+      .chat .chat-form form .form-field {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin-right: 44px; }
+        @media screen and (max-width: 1920px) {
+          .chat .chat-form form .form-field {
+            margin-right: 2.29vw; } }
+        @media screen and (max-width: 980px) {
+          .chat .chat-form form .form-field {
+            width: 50%;
+            padding-bottom: 20px; } }
+        .chat .chat-form form .form-field:nth-child(2n) {
+          margin-right: 0; }
+        .chat .chat-form form .form-field label {
+          font-size: 30px;
+          color: #0c0c0c;
+          font-weight: bold;
+          font-family: "Gilroy";
+          margin-right: 11px; }
+          @media screen and (max-width: 980px) {
+            .chat .chat-form form .form-field label {
+              font-size: 20px; } }
+        .chat .chat-form form .form-field input {
+          width: 100%;
+          height: 56px;
+          filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.16));
+          background-color: #ffffff;
+          border: 1px solid #707070;
+          font-size: 30px; }
+          @media screen and (max-width: 980px) {
+            .chat .chat-form form .form-field input {
+              font-size: 20px;
+              height: 42px; } }
+  .chat .chat-screen {
+    padding: 15px 45px 40px;
+    background-color: #fff; }
+    .chat .chat-screen .item {
+      margin: 20px 0; }
+    .chat .chat-screen .video-block, .chat .chat-screen .image-block, .chat .chat-screen .text-block {
+      max-width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      filter: drop-shadow(0 0 11.5px rgba(0, 0, 0, 0.16)); }
+    .chat .chat-screen .video-block, .chat .chat-screen .image-block {
+      width: 324px;
+      height: 186px; }
+    .chat .chat-screen .video-block img {
+      width: 53px; }
+    .chat .chat-screen .scale-block {
+      width: 577px;
+      height: 58px;
+      max-width: 100%;
+      padding: 28px 34px 18px; }
+    .chat .chat-screen .image-block img {
+      width: 128px; }
+    .chat .chat-screen .text-block {
+      max-width: 100%;
+      padding: 30px 50px;
+      border-radius: 15px 0 15px 0;
+      font-size: 30px;
+      color: #707070;
+      font-family: "Segoe UI"; }
+  .chat .send-message {
+    display: flex;
+    align-items: center;
+    padding: 20px 0; }
+    .chat .send-message .attache {
+      margin-right: 7px;
+      display: flex; }
+      .chat .send-message .attache img {
+        width: 64px; }
+        @media screen and (max-width: 980px) {
+          .chat .send-message .attache img {
+            width: 48px; } }
+    .chat .send-message .message-input {
+      width: 100%;
+      padding: 30px 40px; }
+      @media screen and (max-width: 980px) {
+        .chat .send-message .message-input {
+          padding: 20px 30px; } }
+    .chat .send-message .button {
+      margin-left: 30px;
+      width: 142px;
+      height: 75px;
+      border-radius: 15px;
+      background-color: #000000;
+      font-size: 30px;
+      color: #ffffff;
+      font-weight: bold;
+      font-family: "Gilroy";
+      text-align: center; }
+      @media screen and (max-width: 980px) {
+        .chat .send-message .button {
+          margin-left: 20px;
+          width: 100px;
+          height: 50px;
+          font-size: 20px; } }

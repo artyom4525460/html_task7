@@ -1,0 +1,151 @@
+.chat-section{
+    max-width: 1819px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-left: 247px;
+    @media screen and (max-width: $max-desctop-width){
+        padding-left: 12.86vw;
+    }
+    @media screen and (max-width: 1440px){
+        padding-left: 25px;
+    }
+    @media screen and (max-width: $max-mobile-width){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.chat{
+    max-width: 1111px;
+    padding: 0;
+    @media screen and (max-width: 1440px){
+        margin:0 auto;
+    }
+    .chat-form{
+        padding: 13px 0 17px;
+        width: 100%;
+        form{
+            width: 100%;
+            display: flex;
+            .form-field{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                margin-right: 44px;
+                @media screen and (max-width: $max-desctop-width){
+                    margin-right: 2.29vw;
+                }
+                @media screen and (max-width: $max-mobile-width){
+                    width: 50%;
+                    padding-bottom: 20px;
+                }
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+                label{
+                    font-size: 30px;
+                    color: #0c0c0c;
+                    font-weight: bold;
+                    font-family: "Gilroy";
+                    margin-right: 11px;
+                    @media screen and (max-width: $max-mobile-width){
+                        font-size: 20px;
+                    }
+                }
+                input{
+                    width: 100%;
+                    height: 56px;
+                    filter: drop-shadow(0 0 6px rgba(0,0,0,0.16));
+                    background-color: #ffffff;
+                    border: 1px solid #707070;
+                    font-size: 30px;
+                    @media screen and (max-width: $max-mobile-width){
+                        font-size: 20px;
+                        height: 42px;
+                    }
+                }
+            }
+        }
+    }
+    .chat-screen{
+        padding: 15px 45px 40px;
+        background-color: #fff;
+        .item{
+            margin: 20px 0;
+        }
+        .video-block, .image-block, .text-block{
+            max-width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            filter: drop-shadow(0 0 11.5px rgba(0,0,0,0.16));
+        }
+        .video-block, .image-block{
+            width: 324px;
+            height: 186px;
+        }
+        .video-block{
+            img{
+                width: 53px;
+            }
+        }
+        .scale-block{
+            width: 577px;
+            height: 58px;
+            max-width: 100%;
+            padding: 28px 34px 18px;
+        }
+        .image-block{
+            img{
+                width: 128px;
+            }
+        }
+        .text-block{
+            max-width: 100%;
+            padding: 30px 50px;
+            border-radius: 15px 0 15px 0;
+            font-size: 30px;
+            color: #707070;
+            font-family: "Segoe UI";
+        }
+    }
+    .send-message{
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        .attache{
+            margin-right: 7px;
+            display: flex;
+            img{
+                width: 64px;
+                @media screen and (max-width: $max-mobile-width){
+                    width: 48px;
+                }
+            }
+        }
+        .message-input{
+            width: 100%;
+            padding: 30px 40px;
+            @media screen and (max-width: $max-mobile-width){
+                padding: 20px 30px;
+            }
+        }
+        .button{
+            margin-left: 30px;
+            width: 142px;
+            height: 75px;
+            border-radius: 15px;
+            background-color: #000000;
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: "Gilroy";
+            text-align: center;
+            @media screen and (max-width: $max-mobile-width){
+                margin-left: 20px;
+                width: 100px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+}
