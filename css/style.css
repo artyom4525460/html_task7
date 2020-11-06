@@ -97,6 +97,10 @@ img {
   background-color: #d9d0d0;
   padding: 43px 34px 37px;
   position: relative; }
+  @media screen and (max-width: 980px) {
+    .scale {
+      height: 60px;
+      padding: 30px 34px 25px; } }
   .scale .controls {
     width: 100%;
     height: 11px;
@@ -371,6 +375,10 @@ img {
       font-size: 30px;
       color: #707070;
       font-family: "Segoe UI"; }
+      @media screen and (max-width: 980px) {
+        .chat .chat-screen .text-block {
+          padding: 25px 40px;
+          font-size: 25px; } }
   .chat .send-message {
     display: flex;
     align-items: center;
