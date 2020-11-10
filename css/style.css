@@ -387,10 +387,10 @@ img {
       margin-right: 7px;
       display: flex; }
       .chat .send-message .attache img {
-        width: 64px; }
+        width: 128px; }
         @media screen and (max-width: 980px) {
           .chat .send-message .attache img {
-            width: 48px; } }
+            width: 70px; } }
     .chat .send-message .message-input {
       width: 100%;
       padding: 30px 40px; }
