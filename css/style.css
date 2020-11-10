@@ -398,8 +398,9 @@ img {
         .chat .send-message .message-input {
           padding: 20px 30px; } }
     .chat .send-message .button {
-      margin-left: 30px;
-      width: 142px;
+      margin-left: 20px;
+      width: 348px;
+      min-width: 248px;
       height: 75px;
       border-radius: 15px;
       background-color: #000000;
@@ -410,7 +411,25 @@ img {
       text-align: center; }
       @media screen and (max-width: 980px) {
         .chat .send-message .button {
-          margin-left: 20px;
-          width: 100px;
+          margin-left: 10px;
+          width: 200px;
+          min-width: 130px;
           height: 50px;
           font-size: 20px; } }
+    .chat .send-message .send-button {
+      width: 75px;
+      min-width: 75px;
+      border-radius: 38px;
+      padding-left: 15px;
+      padding-top: 5px; }
+      @media screen and (max-width: 980px) {
+        .chat .send-message .send-button {
+          width: 50px;
+          min-width: 50px;
+          padding-left: 13px;
+          padding-top: 4px; } }
+      .chat .send-message .send-button img {
+        width: 45px; }
+        @media screen and (max-width: 980px) {
+          .chat .send-message .send-button img {
+            width: 25px; } }
